@@ -1,7 +1,13 @@
 var express = require("express");
-var burger = require("../models/burger");
+var burger = require("../models/burger.js");
 
-//do research
 var router = express.Router();
+
+// Read about this, index comes from index.handlebar
+router.get("/index", function (req, res) {
+    res.render("index", {
+
+    });
+});
 
 module.exports = router;

@@ -1,3 +1,42 @@
 body {
-    color: #ffb90f
+    background-color: #ffb90f !important;
+}
+
+#bigContainer {
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+h1,
+h4 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h1 {
+    color: rgb(217, 0, 0);
+}
+
+#enterBurger {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+#burgerImg {
+    margin: auto;
+    height: 200px;
+    width: auto;
+    display: block;
+    padding-bottom: 20px;
+}
+
+#submitBtn {
+    background-color: #3b5bdb;
+    color: white;
 }

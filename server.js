@@ -19,5 +19,5 @@ app.engine("handlebars", exphbs({
 app.set("view engine", "handlebars");
 
 app.listen(PORT, function () {
-    console.log("Server listening on: http://localhost:" + PORT + "/index");
+    console.log("Server listening on: http://localhost:" + PORT);
 });

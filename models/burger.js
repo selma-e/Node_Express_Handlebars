@@ -12,4 +12,4 @@ const burgerORM = {
     }
 };
 
-module.exports = orm;
+module.exports = burgerORM;

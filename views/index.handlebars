@@ -34,7 +34,8 @@
         {{#unless devoured}}
         <div class="row">
             <div class="col">
-                <h1>{{burger_name}}</h1>
+                {{!-- <h2>{{burger_name}}</h2> --}}
+                <input class="form-control" type="text" placeholder="{{burger_name}}">
             </div>
             <div class="col">
                 <button class="devourBtn btn btn-light" data-id="{{id}}">Devour It!</button>
@@ -46,7 +47,8 @@
     <div class="col">
         {{#each burgers}}
         {{#if devoured}}
-        <h1>{{burger_name}}</h1>
+        {{!-- <h2>{{burger_name}}</h2> --}}
+        <input class="form-control" type="text" placeholder="{{burger_name}}" readonly>
         {{/if}}
         {{/each}}
     </div>

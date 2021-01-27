@@ -10,9 +10,6 @@
         </div>
     </div>
 
-    {{!-- Devour button --}}
-    <button id="devourBtn" type="submit">Devour It!</button>
-
     {{!-- Form Submission --}}
     <div class="row">
         <div class="col">
@@ -20,7 +17,7 @@
                 <form id="burgerForm">
                     <textarea type="text" name="burgerName" rows="5" cols="40" wrap="hard"></textarea>
                     <br>
-                    <button id="submitBtn" type="submit">Submit</button>
+                    <button class="btn btn-primary" id="submitBtn">Submit</button>
                 </form>
             </div>
         </div>
@@ -40,7 +37,7 @@
                 <h1>{{burger_name}}</h1>
             </div>
             <div class="col">
-                <button class="devourBtn btn btn-primary" data-id="{{id}}">Devour It!</button>
+                <button class="devourBtn btn btn-light" data-id="{{id}}">Devour It!</button>
             </div>
         </div>
         {{/unless}}

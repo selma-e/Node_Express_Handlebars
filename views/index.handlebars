@@ -28,28 +28,41 @@
         </div>
     </div>
 </div>
-<div class="row">
-    <div class="col">
-        {{#each burgers}}
-        {{#unless devoured}}
-        <div class="row">
-            <div class="col">
-                {{!-- <h2>{{burger_name}}</h2> --}}
-                <input class="form-control" type="text" placeholder="{{burger_name}}">
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            {{#each burgers}}
+            {{#unless devoured}}
+            <div class="row">
+                <div class="col-12">
+                    {{!-- <input class="form-control fix-input" type="text" placeholder="{{burger_name}}">
+                    <button class="devourBtn btn btn-light" data-id="{{id}}">Devour It!</button> --}}
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="{{burger_name}}">
+                        <button class="devourBtn btn btn-light" type="button" data-id="{{id}}">Devour It!</button>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <button class="devourBtn btn btn-light" data-id="{{id}}">Devour It!</button>
-            </div>
+            {{/unless}}
+            {{/each}}
         </div>
-        {{/unless}}
-        {{/each}}
-    </div>
-    <div class="col">
-        {{#each burgers}}
-        {{#if devoured}}
-        {{!-- <h2>{{burger_name}}</h2> --}}
-        <input class="form-control" type="text" placeholder="{{burger_name}}" readonly>
-        {{/if}}
-        {{/each}}
+
+        <div class="col-6">
+            {{#each burgers}}
+            {{#if devoured}}
+            {{!-- <h2>{{burger_name}}</h2> --}}
+            {{!-- <input class="form-control" type="text" placeholder="{{burger_name}}" readonly> --}}
+            <div class="row">
+                <div class="col-12">
+                    {{!-- <input class="form-control fix-input" type="text" placeholder="{{burger_name}}">
+                    <button class="devourBtn btn btn-light" data-id="{{id}}">Devour It!</button> --}}
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="{{burger_name}}" readonly">
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+            {{/each}}
+        </div>
     </div>
 </div>

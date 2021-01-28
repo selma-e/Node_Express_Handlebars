@@ -1,13 +1,19 @@
-# Selma's HW17 Node_Express_Handlebars
+# Selma's HW13 Node_Express_Handlebars
 
 ## Description:
 
-In this activity, I am building a workout tracker. In it, you can add new resistance or cardio exercises on a daily basis if you'd like. You can also see the information propagated from your last workout. The fitness dashboard then displays your workout details including the total duration of workouts over the course of a 7 day period. For my database, I am utilizing Mongo DB and my schema is built from the node package Mongoose.
+In this activity, I am utilizing the node packages mysql, express and express-handlebars to create an eat-the-burger full stack application. In this app, you can enter your own burger of choice. Once the burger is submitted it is added to a list that is always retained via a SQL database . Then you have the option to devour the burgers you placed on the list to move them to another devoured list that is also retained via the SQL database. I also built my own ORM (object relational mapping). I learned how to write routes and utilize callback results to get all the correct burger information.
 
 ## A couple of things I learned in this:
 
-- I read up on aggregate functions, but ended up using the .reduce method for arrays.
-- Mongoose node package for Schema building
+- Node package express-handlebars
+- How to deploy to JawsDB
+- Built my own ORM (Object Relational Mapping)
+- Node package mysql
+- .env
+- Node package express
+- Routing
+- Callbacks
 
 ## Installation:
 
@@ -17,10 +23,12 @@ In this activity, I am building a workout tracker. In it, you can add new resist
 ## Usage:
 
 <img src="./public/Assets/img/screenshot1.png">
-<img src="./public/Assets/img/screenshot2.png">
 
 ## Resources Used/Credits:
 
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+- https://www.npmjs.com/package/mysql
+- https://www.npmjs.com/package/express
+- https://www.npmjs.com/package/express-handlebars
+- https://www.heroku.com
 
 © 2021 Selma Elgabalawy | UW-SEA-FSF-PT-08-2020-U-C-TTh

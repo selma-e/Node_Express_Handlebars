@@ -35,8 +35,6 @@
             {{#unless devoured}}
             <div class="row">
                 <div class="col-12">
-                    {{!-- <input class="form-control fix-input" type="text" placeholder="{{burger_name}}">
-                    <button class="devourBtn btn btn-light" data-id="{{id}}">Devour It!</button> --}}
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="{{burger_name}}">
                         <button class="devourBtn btn btn-light" type="button" data-id="{{id}}">Devour It!</button>
@@ -50,12 +48,8 @@
         <div class="col-6">
             {{#each burgers}}
             {{#if devoured}}
-            {{!-- <h2>{{burger_name}}</h2> --}}
-            {{!-- <input class="form-control" type="text" placeholder="{{burger_name}}" readonly> --}}
             <div class="row">
                 <div class="col-12">
-                    {{!-- <input class="form-control fix-input" type="text" placeholder="{{burger_name}}">
-                    <button class="devourBtn btn btn-light" data-id="{{id}}">Devour It!</button> --}}
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="{{burger_name}}" readonly">
                     </div>
